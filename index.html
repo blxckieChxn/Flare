@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title> log in </title>
+        <link rel="stylesheet" type="text/css" href="/css/login.css">
+    </head>
+    <body>
+        <div class="texto"> 
+            <div class="imagen">
+                <img src="/img/magica-removebg-preview.png" width="80%" height="30%">.
+            </div>
+            <form action="/php/login.php" method="post">
+                <div class="inicio">
+                    <input type="text" id="username" name="username" placeholder="Usuario" required>
+                    <label><b>Nombre usuario</b></label>
+                </div>
+    
+                <div class="inicio">
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                        <label><b>Contraseña</b></label>
+                    </div>
+                <input type="submit" value="iniciar">
+                
+                <div class=" inicio">
+                    <p>¿No tienes una cuenta? <a href="/html/registro.html"> Registrate</a></p>
+                </div>
+            </form>
+        </div>        
+    </body>
+</html>
