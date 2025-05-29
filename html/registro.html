@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title> Sign in </title>
+        <link rel="stylesheet" type="text/css" href="../css/registro.css"> 
+    </head>
+    <body>
+        <div class="texto">
+            <div class="imagen">
+                <img src="../img/magica-removebg-preview.png" width="80%" height="30%">
+            </div>
+    
+            <form action="../php/registro.php" method="post">
+                <div class="registro">
+                    <input type="text" id="username" name="username" placeholder="Usuario" required>
+                    <label><b> Nombre usuario</b></label>
+                </div>
+    
+                <div class="registro">
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                    <label><b> Contraseña</b></label>
+                </div>
 
+                <div class="registro">
+                    <input type="password" id="password2" name="password2" placeholder="Repetir contraseña" required>
+                    <label><b> Repetir contraseña</b></label>
+                </div>
+
+                <button onclick="registro()"> Registrarse </button>
+                              
+                <div class="inicio">
+                    <p>¿Tienes una cuenta? <a href="../index.html">Inicia sesion</a></p>
+                </div>   
+                <script>
+                    function registro() {
+                        // Aquí puedes enviar una solicitud al servidor
+                        var xhttp = new XMLHttpRequest();
+                        xhttp.onreadystatechange = function() {
+                            if (this.readyState == 4 && this.status == 200) {
+                                console.log(this.responseText); // Manejar la respuesta si es necesario
+                            }
+                        };
+                        xhttp.open("GET", "../php/registro.php", true); // Archivo PHP que manejará la query
+                        xhttp.send();
+                    }
+                </script>
+            </form>
+        </div>
+    </body>
+</html>
