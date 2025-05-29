@@ -1,0 +1,91 @@
+body{
+    background-image: url(../img/manamagic.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: magic;
+    animation-duration: 2s;
+    
+}
+
+.texto{
+    width: 450px;
+    height: 80%;
+    background: rgba(143, 143, 143, 0.7); /* Gris con 50% de opacidad */
+    border-radius: 25px;
+}
+.imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid orange;
+    margin-top: -15px;
+}
+.texto h1{
+    text-align: center
+}
+.inicio{
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+    margin-top: -10px;
+}
+
+.inicio input{
+    font-size: 120%;
+    width: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background: none;
+    outline: none;
+
+}
+
+.inicio label{
+
+    position: absolute;
+    margin-top: -15px;
+}
+.registrarse{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 115%;
+}
+
+input[type="submit"]{
+    display: flex;
+justify-content: center;
+font-size: 120%;
+width: 70%;
+margin-left: 15%;
+border-radius: 20px;
+margin-top: 10%;
+background: none;
+outline: none;
+background: linear-gradient(to left, orange, rgb(43, 144, 207));
+cursor: pointer;
+transition: width 1s;
+    
+}
+
+input[type="submit"]:hover{
+    width: 80%;
+}
+
+@keyframes magic {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

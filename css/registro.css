@@ -1,0 +1,75 @@
+body{
+    background-image: url(../img/manamagic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    animation-name: magic;
+    animation-duration: 2s;
+}
+.texto{
+width: 450px;
+height: 80%;
+background: rgba(143, 143, 143, 0.7); /* Gris con 50% de opacidad */
+border-radius: 25px;
+}
+.imagen{
+display: flex;
+justify-content: center;
+border-bottom: 2px solid orange;
+margin-top: -15px;
+}
+.registro{
+display: flex;
+justify-content: center;
+padding-top: 30px;
+}
+.registro input{
+width: 100%;
+background: none;
+outline: none;
+display: flex;
+margin-left: 20px;
+margin-top: 20px;
+margin-right: 40px;
+border-radius: 40px;
+}
+.registro label{
+position: absolute;
+margin-top: -15px;
+}
+
+button{
+display: flex;
+justify-content: center;
+font-size: 120%;
+width: 70%;
+margin-left: 15%;
+border-radius: 20px;
+margin-top: 10%;
+background: none;
+outline: none;
+background: linear-gradient(to left, orange, rgb(43, 144, 207));
+cursor: pointer;
+transition: width 1s;
+}
+button:hover{
+width: 80%;
+}
+.inicio{
+text-align: center;
+font-size: 120%;
+}
+@keyframes magic{
+from{
+    opacity: 0
+}
+to{
+    opacity: 1;
+}
+}
