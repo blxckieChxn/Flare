@@ -13,9 +13,8 @@ from asyncio import Queue
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-# Por motivos de seguridad no se incluye el token del bot
 # Token
-BOT_TOKEN = ''
+BOT_TOKEN = '7417727967:AAHqassfE5Fk_aE4It7d6K8FT_4UyWyUwVI'
 
 # Pre-assign menu text
 WELCOME_MENU = "<b>Hola, soy Flare Bot</b>\n\n¿Que necesitas?"
@@ -65,10 +64,10 @@ conexion = mysql.connector.connect(
 )
 cursor = conexion.cursor()
 
-
-# Por motivos de seguridad no se indican los valores de TOKEN y CHAT_ID 
-TOKEN = ''
-CHAT_ID = ''
+# Configura tu token y chat_id
+# Cambiar para mostrar en documentacion
+TOKEN = '7417727967:AAHqassfE5Fk_aE4It7d6K8FT_4UyWyUwVI'
+CHAT_ID = '1247409867'
 
 # Función para enviar mensajes de Telegram
 async def send_telegram_message(message):

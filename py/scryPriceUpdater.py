@@ -206,7 +206,7 @@ def main(cursor):
                     if(precioEUR != False):
                         precioEUR = extraer_numero(precioEUR)
                         if(precioEUR == 0.00):
-                            precioEUR = precioUSD*1.13 # Conversion $ a €
+                            precioEUR = precioUSD*0.88 # Conversion $ a €
                         print(precioEUR)
 
                     visitadas.add(url)
