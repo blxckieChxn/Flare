@@ -14,7 +14,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
 # Token
-BOT_TOKEN = '7417727967:AAHqassfE5Fk_aE4It7d6K8FT_4UyWyUwVI'
+BOT_TOKEN = ''
 
 # Pre-assign menu text
 WELCOME_MENU = "<b>Hola, soy Flare Bot</b>\n\n¿Que necesitas?"
