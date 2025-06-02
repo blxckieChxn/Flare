@@ -66,8 +66,8 @@ cursor = conexion.cursor()
 
 # Configura tu token y chat_id
 # Cambiar para mostrar en documentacion
-TOKEN = '7417727967:AAHqassfE5Fk_aE4It7d6K8FT_4UyWyUwVI'
-CHAT_ID = '1247409867'
+TOKEN = ''
+CHAT_ID = ''
 
 # Función para enviar mensajes de Telegram
 async def send_telegram_message(message):
@@ -136,7 +136,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
                 idVenta, uid, cartaId, direccion, cantidad, email = fila
 
                 mensaje = (
-                    f"-------------PEDIDO-------------"
+                    f"-------------PEDIDO-------------\n"
                     f"<b>Pedido:</b> {idVenta}\n"
                     f"<b>Cliente:</b> {uid}\n"
                     f"<b>Carta:</b> {cartaId}\n"
