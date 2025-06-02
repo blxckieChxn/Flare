@@ -56,7 +56,7 @@ ul a:link {
   min-height: 150px;
 }
 
-.botones-container {
+.button-container {
   display: flex;
   width: 100%;
   margin-top: 20px;
@@ -70,4 +70,23 @@ ul a:link {
   padding: 10px 16px;
   border-radius: 6px;
   cursor: pointer;
+  flex: 1; /* Ocupa la mitad del contenedor */
+  text-align: center;
+}
+
+.drop-zone {
+  border: 3px dashed #888;
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #666;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.drop-zone.dragover {
+  background-color: rgb(240, 181, 19);
+  border-color: rgb(240, 181, 19);
+  color: rgb(15, 240, 181, 19);
 }
