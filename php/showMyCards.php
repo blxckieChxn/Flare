@@ -17,7 +17,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="../css/allEditions.css">
+  <link rel="stylesheet" href="../css/showMyCards.css">
   <title>Cartas Edicion</title>
   <link rel="icon" href="../img/mtgLogo.ico" type="image/x-icon">
   <link rel="shortcut icon" href="../img/mtgLogo.ico" type="image/x-icon">
@@ -90,8 +90,12 @@
               }
               // El id del div html es igual que el id en la base de datos, para poder recuperarlo con onclick()
               $imagenSegura = htmlspecialchars($row["imagen"], ENT_QUOTES, 'UTF-8');
-              echo "<td>" . $row["precio_eur"] . "€ | " . $row["precio_usd"] . "$ <div class='card'><img src='http://" . $_SERVER['SERVER_ADDR'] . "/" . $imagenSegura . "' width='280' height='410' loading='eager' class='card' data-value='" . $row["idCarta"] . "' data-selected='false' style='border-radius: 10px;'></div></td>";
-                            $count = $count + 1;
+              echo "<td class='containerCarta'>" . $row["precio_eur"] . "€ | " . $row["precio_usd"] . "$";
+              echo "<div class='card'>";
+              echo "<img src='http://" . $_SERVER['SERVER_ADDR'] . "/" . $imagenSegura . "' width='280' height='410' loading='eager' class='card' data-value='" . $row["idCarta"] . "' data-selected='false' style='border-radius: 10px;'>";
+              echo "</div>";
+              echo "Cantidad: " . $row["cantidad"] . "</div></td>";
+              $count = $count + 1;
               $i=$i+1;
               
             }

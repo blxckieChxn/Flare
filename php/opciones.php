@@ -58,18 +58,9 @@
     <?php
     include_once "conexion.php";
 
-    session_start(); // Asegúrate de iniciar la sesión antes de acceder a $_SESSION
-
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         
-        // Conexión a la base de datos
-        $servername = "localhost";
-        $db_username = "flare";
-        $db_password = "sdfsdf";
-        $dbname = "flare";
-
-        // Crear conexión
-        $conn = new mysqli($servername, $db_username, $db_password, $dbname);
+        $conn = conectar();
 
         // Verificar conexión
         if($conn->connect_error){

@@ -76,6 +76,29 @@
           </tr>
       </table> 
     </form>
+    <hr><hr><hr>
+    <div>
+      
+      <h4>Nota: El formato de imagen debe ser en una sola fila de cartas, en caso de ser varias las cartas de la imagen</h3>
+      <h4>Disclaimer: Alinear las cartas en una sola fila</h3>
+      <h2>Subir Imagen para analizar con Flare Images</h2>
+      <form method="POST" action="ocr.php" enctype="multipart/form-data">
+
+        <div class="drop-zone" id="drop-zone">
+          <input type="file" name="imagen" accept="image/*" required>
+        </div>
+
+        <br>
+
+        <div class=button-container>
+          <button class="botonSave" type="submit">Extraer Cartas</button>
+        <div>
+
+      </form>
+    </div>
+
+    <script src="../js/dragDrop.js.js"></script>
+    
     <?php 
       if ($_SERVER["REQUEST_METHOD"] == "POST") {
           // Recuperar el valor del formulario                  
