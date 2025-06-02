@@ -14,7 +14,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
 # Token
-BOT_TOKEN = '7417727967:AAHqassfE5Fk_aE4It7d6K8FT_4UyWyUwVI'
+BOT_TOKEN = 'tu_token'
 
 # Pre-assign menu text
 WELCOME_MENU = "<b>Hola, soy Flare Bot</b>\n\n¿Que necesitas?"
@@ -66,8 +66,8 @@ cursor = conexion.cursor()
 
 # Configura tu token y chat_id
 # Cambiar para mostrar en documentacion
-TOKEN = '7417727967:AAHqassfE5Fk_aE4It7d6K8FT_4UyWyUwVI'
-CHAT_ID = '1247409867'
+TOKEN = 'tu_token'
+CHAT_ID = 'tu_chat_id'
 
 # Función para enviar mensajes de Telegram
 async def send_telegram_message(message):
