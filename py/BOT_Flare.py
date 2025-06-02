@@ -13,6 +13,7 @@ from asyncio import Queue
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
+# Por motivos de seguridad no se incluye el token del bot
 # Token
 BOT_TOKEN = ''
 
@@ -64,8 +65,8 @@ conexion = mysql.connector.connect(
 )
 cursor = conexion.cursor()
 
-# Configura tu token y chat_id
-# Cambiar para mostrar en documentacion
+
+# Por motivos de seguridad no se indican los valores de TOKEN y CHAT_ID 
 TOKEN = ''
 CHAT_ID = ''
 
