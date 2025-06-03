@@ -11,7 +11,15 @@
 
 ## 📁 Estructura del Proyecto
 
-<pre><code>```text Flare/ ├── css/ # Estilos CSS ├── html/ # Plantillas HTML ├── img/ # Recursos gráficos ├── js/ # Scripts JavaScript ├── php/ # Scripts PHP para backend ├── py/ # Scripts Python para backend └── index.html # Página principal ``` </code></pre>
+```text
+Flare/
+├── css/          # Archivos de estilos
+├── html/         # Plantillas o páginas HTML
+├── img/          # Imágenes y recursos gráficos
+├── js/           # Scripts JavaScript
+├── php/          # Scripts PHP para lógica de backend
+├── py/           # Scripts Python auxiliares
+└── index.html    # Página de inicio del proyecto
 
 ## 🚀 Instalación y Ejecución
 
