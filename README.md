@@ -20,6 +20,7 @@ Flare/
 ├── php/          # Scripts PHP para lógica de backend
 ├── py/           # Scripts Python auxiliares
 └── index.html    # Página de inicio del proyecto
+```
 
 ## 🚀 Instalación y Ejecución
 
