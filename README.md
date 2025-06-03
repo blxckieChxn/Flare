@@ -11,14 +11,7 @@
 
 ## 📁 Estructura del Proyecto
 
-Flare/
-├── css/ # Estilos CSS
-├── html/ # Plantillas HTML
-├── img/ # Recursos gráficos
-├── js/ # Scripts JavaScript
-├── php/ # Scripts PHP para backend
-├── py/ # Scripts Python para backend
-└── index.html # Página principal
+<pre><code>```text Flare/ ├── css/ # Estilos CSS ├── html/ # Plantillas HTML ├── img/ # Recursos gráficos ├── js/ # Scripts JavaScript ├── php/ # Scripts PHP para backend ├── py/ # Scripts Python para backend └── index.html # Página principal ``` </code></pre>
 
 ## 🚀 Instalación y Ejecución
 
@@ -44,4 +37,3 @@ Flare/
 
 Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
 
-::contentReference[oaicite:62]{index=62}
